@@ -1,0 +1,4720 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	204)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    attributes 	(list Attribute_Set
+	(object Attribute
+	    tool       	"Java"
+	    name       	"IDE"
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
+    quid       	"61430CD0017F"
+    enforceClosureAutoLoad 	FALSE
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	0
+	gridY      	0
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    charSet    	204
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"61430CD00181"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "Электронный кошелёк"
+		quid       	"61430DBA004D"
+		stereotype 	"Actor")
+	    (object Class "Клиент"
+		quid       	"61430E0D011D"
+		stereotype 	"Actor")
+	    (object Class "Сайт предприятия"
+		quid       	"614312B102B6"
+		stereotype 	"Actor")
+	    (object Class "Кассир"
+		quid       	"614C3EBE020D"
+		stereotype 	"Actor")
+	    (object UseCase "Выбор предприятия"
+		quid       	"61430EB003D5")
+	    (object UseCase "Осуществление поиска  изделия"
+		quid       	"6143135F014E")
+	    (object UseCase "Сздание доставки изделия"
+		quid       	"614313770366")
+	    (object UseCase "Оплата изделия"
+		quid       	"614313A8005E")
+	    (object UseCase "Просмотр количества изделия в наличии"
+		quid       	"614313F5004E")
+	    (object UseCase "Просмотр описания изделия"
+		quid       	"6143142E0396")
+	    (object UseCase " Оценка покупателей"
+		quid       	"6143155601DE")
+	    (object UseCase "Просмотр рекламы других изделий"
+		quid       	"61431679018E")
+	    (object UseCase " Оказание помощи в выборе изделия"
+		quid       	"614C3EE602FC")
+	    (object UseCase "Осуществление заказа"
+		quid       	"614C3F1F0195")
+	    (object UseCase "Выдача чека на покупку"
+		quid       	"614C3FCF039D")
+	    (object Association "$UNNAMED$0"
+		quid       	"61431067038D"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"614310680319"
+			supplier   	"Use Case View::Выбор предприятия"
+			quidu      	"61430EB003D5"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"61431068031B"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D")))
+	    (object Association "$UNNAMED$3"
+		quid       	"614312C302DD"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"614312C40332"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"614312C40334"
+			supplier   	"Use Case View::Выбор предприятия"
+			quidu      	"61430EB003D5")))
+	    (object Association "$UNNAMED$6"
+		quid       	"614313BB01DE"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"614313BC014A"
+			supplier   	"Use Case View::Оплата изделия"
+			quidu      	"614313A8005E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"614313BC014C"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D")))
+	    (object Association "$UNNAMED$9"
+		quid       	"614313BF0056"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"614313C0007A"
+			supplier   	"Use Case View::Электронный кошелёк"
+			quidu      	"61430DBA004D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"614313C0007C"
+			supplier   	"Use Case View::Оплата изделия"
+			quidu      	"614313A8005E")))
+	    (object Association "$UNNAMED$12"
+		quid       	"614313C30056"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"614313C5012B"
+			supplier   	"Use Case View::Осуществление поиска  изделия"
+			quidu      	"6143135F014E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"614313C5012D"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$15"
+		quid       	"614313CD00D7"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"614313CE0002"
+			supplier   	"Use Case View::Осуществление поиска  изделия"
+			quidu      	"6143135F014E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"614313CE0004"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$18"
+		quid       	"61431407000E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"614314070305"
+			supplier   	"Use Case View::Просмотр количества изделия в наличии"
+			quidu      	"614313F5004E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"614314070307"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$21"
+		quid       	"6143140D018D"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$22"
+			quid       	"6143140E00EA"
+			supplier   	"Use Case View::Сздание доставки изделия"
+			quidu      	"614313770366"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$23"
+			quid       	"6143140E00EC"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$24"
+		quid       	"614315530126"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$25"
+			quid       	"6143155400DA"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$26"
+			quid       	"6143155400DC"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$27"
+		quid       	"614315620017"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$28"
+			quid       	"61431563003A"
+			supplier   	"Use Case View:: Оценка покупателей"
+			quidu      	"6143155601DE"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$29"
+			quid       	"61431563003C"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$30"
+		quid       	"6143169300D6"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$31"
+			quid       	"6143169303A1"
+			supplier   	"Use Case View::Просмотр рекламы других изделий"
+			quidu      	"61431679018E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$32"
+			quid       	"6143169303A3"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6")))
+	    (object Association "$UNNAMED$33"
+		quid       	"614C3EE003BD"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$34"
+			quid       	"614C3EE103A9"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$35"
+			quid       	"614C3EE103AB"
+			supplier   	"Use Case View::Выбор предприятия"
+			quidu      	"61430EB003D5")))
+	    (object Association "$UNNAMED$36"
+		quid       	"614C3F1C0054"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$37"
+			quid       	"614C3F1D0001"
+			supplier   	"Use Case View:: Оказание помощи в выборе изделия"
+			quidu      	"614C3EE602FC"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$38"
+			quid       	"614C3F1D0003"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D")))
+	    (object Association "$UNNAMED$39"
+		quid       	"614C3FBD0045"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$40"
+			quid       	"614C3FBD0311"
+			supplier   	"Use Case View::Осуществление заказа"
+			quidu      	"614C3F1F0195"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$41"
+			quid       	"614C3FBD0313"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D")))
+	    (object Association "$UNNAMED$42"
+		quid       	"614C40C00044"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$43"
+			quid       	"614C40C003C1"
+			supplier   	"Use Case View::Выдача чека на покупку"
+			quidu      	"614C3FCF039D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$44"
+			quid       	"614C40C003C3"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D")))
+	    (object Association "$UNNAMED$45"
+		quid       	"614C48F003AE"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$46"
+			quid       	"614C48F1025A"
+			supplier   	"Use Case View::Осуществление заказа"
+			quidu      	"614C3F1F0195"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$47"
+			quid       	"614C48F1025C"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D")))
+	    (object Association "$UNNAMED$48"
+		quid       	"614C48F5025D"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$49"
+			quid       	"614C48F6014B"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$50"
+			quid       	"614C48F6014E"
+			supplier   	"Use Case View::Осуществление заказа"
+			quidu      	"614C3F1F0195")))
+	    (object Association "$UNNAMED$51"
+		quid       	"614C48FC02BF"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$52"
+			quid       	"614C48FD010A"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$53"
+			quid       	"614C48FD010E"
+			supplier   	"Use Case View::Осуществление заказа"
+			quidu      	"614C3F1F0195")))
+	    (object Association "$UNNAMED$54"
+		quid       	"614C493D00F7"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$55"
+			quid       	"614C493D03DB"
+			supplier   	"Use Case View:: Оказание помощи в выборе изделия"
+			quidu      	"614C3EE602FC"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$56"
+			quid       	"614C493D03DD"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D")))
+	    (object Association "$UNNAMED$57"
+		quid       	"614C49420246"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$58"
+			quid       	"614C494302E3"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$59"
+			quid       	"614C494302E6"
+			supplier   	"Use Case View:: Оказание помощи в выборе изделия"
+			quidu      	"614C3EE602FC")))
+	    (object Association "$UNNAMED$60"
+		quid       	"614C495601FF"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$61"
+			quid       	"614C4957025B"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$62"
+			quid       	"614C4957025E"
+			supplier   	"Use Case View::Выдача чека на покупку"
+			quidu      	"614C3FCF039D")))
+	    (object Association "$UNNAMED$63"
+		quid       	"614C49950016"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$64"
+			quid       	"614C499B0123"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$65"
+			quid       	"614C499B0128"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396")))
+	    (object Association "$UNNAMED$66"
+		quid       	"614C49A9032E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$67"
+			quid       	"614C49AB01AB"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$68"
+			quid       	"614C49AB01AF"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396")))
+	    (object Association "$UNNAMED$69"
+		quid       	"614C49BB0306"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$70"
+			quid       	"614C49BC020B"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$71"
+			quid       	"614C49BC020D"
+			supplier   	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D")))
+	    (object Association "$UNNAMED$72"
+		quid       	"614C49C000B6"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$73"
+			quid       	"614C49C10103"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$74"
+			quid       	"614C49C10105"
+			supplier   	"Use Case View::Клиент"
+			quidu      	"61430E0D011D")))
+	    (object Association "$UNNAMED$75"
+		quid       	"614C49C4029F"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$76"
+			quid       	"614C49C5033B"
+			supplier   	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$77"
+			quid       	"614C49C50341"
+			supplier   	"Use Case View::Просмотр описания изделия"
+			quidu      	"6143142E0396")))
+	    (object Mechanism @1
+		logical_models 	(list unit_reference_list
+		    (object Object "$UNNAMED$78"
+			quid       	"617134F80086"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"6171361E0053"
+				supplier   	"$UNNAMED$79"
+				quidu      	"617135AF022D"
+				messages   	(list Messages
+				    (object Message "Заходит на сайт"
+					quid       	"6171361E0054"
+					frequency  	"Aperiodic"
+					synchronization 	"Timeout"
+					dir        	"FromClientToSupplier"
+					sequence   	"1"
+					ordinal    	0
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Создание доставки изделия"
+					quid       	"6171384F037B"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"5"
+					ordinal    	5
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"6171374F022B"
+				supplier   	"$UNNAMED$80"
+				quidu      	"617135BF036D"
+				messages   	(list Messages
+				    (object Message "Пополнение электронного кошелька"
+					quid       	"6171374F022C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"4"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"617138A60105"
+				supplier   	"$UNNAMED$78"
+				quidu      	"617134F80086"
+				messages   	(list Messages
+				    (object Message " Оформляет документ о получении товара"
+					quid       	"617138A60106"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7"
+					ordinal    	7
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Клиент"
+			quidu      	"61430E0D011D"
+			persistence 	"Static"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "$UNNAMED$79"
+			quid       	"617135AF022D"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"617136B100C7"
+				supplier   	"$UNNAMED$79"
+				quidu      	"617135AF022D"
+				messages   	(list Messages
+				    (object Message "Поиск товара"
+					quid       	"617136B100C8"
+					frequency  	"Periodic"
+					synchronization 	"Synchronous"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1"
+					ordinal    	1
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Сайт предприятия"
+			quidu      	"614312B102B6"
+			persistence 	"Static"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "$UNNAMED$80"
+			quid       	"617135BF036D"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"61713754017B"
+				supplier   	"$UNNAMED$79"
+				quidu      	"617135AF022D"
+				messages   	(list Messages
+				    (object Message "Списание суммы с кошелька"
+					quid       	"61713754017C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"6"
+					ordinal    	6
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Электронный кошелёк"
+			quidu      	"61430DBA004D"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "$UNNAMED$81"
+			quid       	"617135E3023D"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"6171373C002B"
+				supplier   	"$UNNAMED$79"
+				quidu      	"617135AF022D"
+				messages   	(list Messages
+				    (object Message "Оформление заказа клиента"
+					quid       	"6171373C002C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"2"
+					ordinal    	2
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"617137480303"
+				supplier   	"$UNNAMED$78"
+				quidu      	"617134F80086"
+				messages   	(list Messages
+				    (object Message "Помощь клиету при создания заказа"
+					quid       	"617137480304"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"3"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Кассир"
+			quidu      	"614C3EBE020D"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"61430CD0018C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	256
+		origin_y   	2170
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Use Case View::Электронный кошелёк" @2
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(3247, 2018)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(3247, 2244)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Электронный кошелёк")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"61430DBA004D"
+			width      	212
+			height     	294
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Оплата изделия" @3
+			location   	(1844, 2004)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(1844, 2162)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Оплата изделия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614313A8005E"
+			width      	282
+			height     	157)
+		    (object AssociationViewNew "$UNNAMED$9" @4
+			location   	(2561, 2007)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614313BF0056"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @5
+				Parent_View 	@4
+				location   	(498, 28)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313C0007A"
+				client     	@4
+				supplier   	@2
+				vertices   	(list Points
+				    (2561, 2007)
+				    (3142, 2012))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @6
+				Parent_View 	@4
+				location   	(498, 28)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313C0007C"
+				client     	@4
+				supplier   	@3
+				vertices   	(list Points
+				    (2561, 2007)
+				    (1981, 2003))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Осуществление заказа" @7
+			location   	(1212, 1236)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@7
+			    location   	(1212, 1406)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Осуществление заказа")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614C3F1F0195"
+			width      	300
+			height     	181)
+		    (object UseCaseView "Use Case View:: Оказание помощи в выборе изделия" @8
+			location   	(878, 1627)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@8
+			    location   	(878, 1797)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	" Оказание помощи в выборе изделия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614C3EE602FC"
+			width      	456
+			height     	181)
+		    (object UseCaseView "Use Case View::Выдача чека на покупку" @9
+			location   	(551, 2202)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@9
+			    location   	(551, 2362)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Выдача чека на покупку")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614C3FCF039D"
+			width      	388
+			height     	162)
+		    (object ClassView "Class" "Use Case View::Кассир" @10
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(353, 889)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@10
+			    location   	(353, 1106)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Кассир")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"614C3EBE020D"
+			width      	200
+			height     	275
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$36" @11
+			location   	(628, 1279)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C3F1C0054"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$37" @12
+				Parent_View 	@11
+				location   	(-194, 436)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C3F1D0001"
+				client     	@11
+				supplier   	@8
+				vertices   	(list Points
+				    (628, 1279)
+				    (813, 1538))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$38" @13
+				Parent_View 	@11
+				location   	(-194, 436)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C3F1D0003"
+				client     	@11
+				supplier   	@10
+				vertices   	(list Points
+				    (628, 1279)
+				    (443, 1020))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$42" @14
+			location   	(459, 1627)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C40C00044"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$43" @15
+				Parent_View 	@14
+				location   	(-363, 784)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C40C003C1"
+				client     	@14
+				supplier   	@9
+				vertices   	(list Points
+				    (459, 1627)
+				    (534, 2124))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$44" @16
+				Parent_View 	@14
+				location   	(-363, 784)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C40C003C3"
+				client     	@14
+				supplier   	@10
+				vertices   	(list Points
+				    (459, 1627)
+				    (385, 1130))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$51" @17
+			location   	(754, 1048)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C48FC02BF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$52" @18
+				Parent_View 	@17
+				location   	(-562, -300)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C48FD010A"
+				client     	@17
+				supplier   	@10
+				vertices   	(list Points
+				    (754, 1048)
+				    (446, 924))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$53" @19
+				Parent_View 	@17
+				location   	(-562, -300)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C48FD010E"
+				client     	@17
+				supplier   	@7
+				vertices   	(list Points
+				    (754, 1048)
+				    (1063, 1173))
+				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Клиент" @20
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1839, 1320)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@20
+			    location   	(1839, 1568)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Клиент")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"61430E0D011D"
+			width      	244
+			height     	338
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$6" @21
+			location   	(1839, 1760)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614313BB01DE"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @22
+				Parent_View 	@21
+				location   	(-190, 440)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313BC014A"
+				client     	@21
+				supplier   	@3
+				vertices   	(list Points
+				    (1839, 1760)
+				    (1840, 1928))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @23
+				Parent_View 	@21
+				location   	(-190, 440)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313BC014C"
+				client     	@21
+				supplier   	@20
+				vertices   	(list Points
+				    (1839, 1760)
+				    (1839, 1593))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$45" @24
+			location   	(1540, 1274)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C48F003AE"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$46" @25
+				Parent_View 	@24
+				location   	(-299, -46)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C48F1025A"
+				client     	@24
+				supplier   	@7
+				vertices   	(list Points
+				    (1540, 1274)
+				    (1357, 1253))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$47" @26
+				Parent_View 	@24
+				location   	(-299, -46)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C48F1025C"
+				client     	@24
+				supplier   	@20
+				vertices   	(list Points
+				    (1540, 1274)
+				    (1723, 1296))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$57" @27
+			location   	(1408, 1453)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C49420246"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$58" @28
+				Parent_View 	@27
+				location   	(83, 1144)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C494302E3"
+				client     	@27
+				supplier   	@20
+				vertices   	(list Points
+				    (1408, 1453)
+				    (1719, 1352))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$59" @29
+				Parent_View 	@27
+				location   	(83, 1144)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C494302E6"
+				client     	@27
+				supplier   	@8
+				vertices   	(list Points
+				    (1408, 1453)
+				    (1097, 1554))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$60" @30
+			location   	(1187, 1758)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C495601FF"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$61" @31
+				Parent_View 	@30
+				location   	(893, 537)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C4957025B"
+				client     	@30
+				supplier   	@20
+				vertices   	(list Points
+				    (1187, 1758)
+				    (1719, 1394))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$62" @32
+				Parent_View 	@30
+				location   	(893, 537)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C4957025E"
+				client     	@30
+				supplier   	@9
+				vertices   	(list Points
+				    (1187, 1758)
+				    (656, 2122))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Выбор предприятия" @33
+			location   	(1716, 858)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@33
+			    location   	(1716, 1053)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Выбор предприятия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"61430EB003D5"
+			width      	432
+			height     	231)
+		    (object AssociationViewNew "$UNNAMED$33" @34
+			location   	(974, 871)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C3EE003BD"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$34" @35
+				Parent_View 	@34
+				location   	(-865, 64)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C3EE103A9"
+				client     	@34
+				supplier   	@10
+				vertices   	(list Points
+				    (974, 871)
+				    (446, 883))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$35" @36
+				Parent_View 	@34
+				location   	(-865, 64)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C3EE103AB"
+				client     	@34
+				supplier   	@33
+				vertices   	(list Points
+				    (974, 871)
+				    (1503, 859))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$0" @37
+			location   	(1780, 1116)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"61431067038D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @38
+				Parent_View 	@37
+				location   	(-249, -204)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614310680319"
+				client     	@37
+				supplier   	@33
+				vertices   	(list Points
+				    (1780, 1116)
+				    (1771, 1078))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @39
+				Parent_View 	@37
+				location   	(-249, -204)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"61431068031B"
+				client     	@37
+				supplier   	@20
+				vertices   	(list Points
+				    (1780, 1116)
+				    (1790, 1155))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Осуществление поиска  изделия" @40
+			location   	(2423, 1300)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@40
+			    location   	(2423, 1438)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Осуществление поиска  изделия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6143135F014E"
+			height     	118)
+		    (object UseCaseView "Use Case View::Просмотр количества изделия в наличии" @41
+			location   	(3162, 1358)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@41
+			    location   	(3162, 1496)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Просмотр количества изделия в наличии")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614313F5004E"
+			height     	118)
+		    (object UseCaseView "Use Case View::Сздание доставки изделия" @42
+			location   	(2486, 306)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@42
+			    location   	(2486, 444)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Сздание доставки изделия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"614313770366"
+			height     	118)
+		    (object UseCaseView "Use Case View:: Оценка покупателей" @43
+			location   	(3405, 899)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@43
+			    location   	(3405, 1037)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	" Оценка покупателей")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6143155601DE"
+			height     	118)
+		    (object UseCaseView "Use Case View::Просмотр рекламы других изделий" @44
+			location   	(3234, 365)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@44
+			    location   	(3234, 503)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Просмотр рекламы других изделий")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"61431679018E"
+			height     	118)
+		    (object ClassView "Class" "Use Case View::Сайт предприятия" @45
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2647, 844)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@45
+			    location   	(2647, 1045)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	423
+			    justify    	0
+			    label      	"Сайт предприятия")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"614312B102B6"
+			width      	175
+			height     	244
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$3" @46
+			location   	(2241, 847)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614312C302DD"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @47
+				Parent_View 	@46
+				location   	(-725, -549)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614312C40332"
+				client     	@46
+				supplier   	@45
+				vertices   	(list Points
+				    (2241, 847)
+				    (2559, 844))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @48
+				Parent_View 	@46
+				location   	(-725, -549)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614312C40334"
+				client     	@46
+				supplier   	@33
+				vertices   	(list Points
+				    (2241, 847)
+				    (1924, 850))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$15" @49
+			location   	(2492, 1155)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614313CD00D7"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$16" @50
+				Parent_View 	@49
+				location   	(-129, 261)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313CE0002"
+				client     	@49
+				supplier   	@40
+				vertices   	(list Points
+				    (2492, 1155)
+				    (2446, 1242))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$17" @51
+				Parent_View 	@49
+				location   	(-129, 261)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614313CE0004"
+				client     	@49
+				supplier   	@45
+				vertices   	(list Points
+				    (2492, 1155)
+				    (2539, 1069))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$18" @52
+			location   	(2984, 1179)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"61431407000E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$19" @53
+				Parent_View 	@52
+				location   	(363, 285)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614314070305"
+				client     	@52
+				supplier   	@41
+				vertices   	(list Points
+				    (2984, 1179)
+				    (3105, 1300))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$20" @54
+				Parent_View 	@52
+				location   	(363, 285)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614314070307"
+				client     	@52
+				supplier   	@45
+				vertices   	(list Points
+				    (2984, 1179)
+				    (2863, 1058))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$21" @55
+			location   	(2570, 597)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"6143140D018D"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$22" @56
+				Parent_View 	@55
+				location   	(-51, -297)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6143140E00EA"
+				client     	@55
+				supplier   	@42
+				vertices   	(list Points
+				    (2570, 597)
+				    (2533, 469))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$23" @57
+				Parent_View 	@55
+				location   	(-51, -297)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6143140E00EC"
+				client     	@55
+				supplier   	@45
+				vertices   	(list Points
+				    (2570, 597)
+				    (2608, 725))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$27" @58
+			location   	(3012, 866)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614315620017"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$28" @59
+				Parent_View 	@58
+				location   	(366, 14)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"61431563003A"
+				client     	@58
+				supplier   	@43
+				vertices   	(list Points
+				    (3012, 866)
+				    (3295, 886))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$29" @60
+				Parent_View 	@58
+				location   	(366, 14)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"61431563003C"
+				client     	@58
+				supplier   	@45
+				vertices   	(list Points
+				    (3012, 866)
+				    (2729, 847))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$30" @61
+			location   	(2864, 663)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"6143169300D6"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$31" @62
+				Parent_View 	@61
+				location   	(218, -189)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6143169303A1"
+				client     	@61
+				supplier   	@44
+				vertices   	(list Points
+				    (2864, 663)
+				    (3000, 554))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$32" @63
+				Parent_View 	@61
+				location   	(218, -189)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"6143169303A3"
+				client     	@61
+				supplier   	@45
+				vertices   	(list Points
+				    (2864, 663)
+				    (2729, 772))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Просмотр описания изделия" @64
+			location   	(789, 265)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@64
+			    location   	(789, 403)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Просмотр описания изделия")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"6143142E0396"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$69" @65
+			location   	(557, 590)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C49BB0306"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$70" @66
+				Parent_View 	@65
+				location   	(-265, -253)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49BC020B"
+				client     	@65
+				supplier   	@64
+				vertices   	(list Points
+				    (557, 590)
+				    (674, 428))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$71" @67
+				Parent_View 	@65
+				location   	(-265, -253)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49BC020D"
+				client     	@65
+				supplier   	@10
+				vertices   	(list Points
+				    (557, 590)
+				    (441, 752))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$72" @68
+			location   	(1337, 814)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C49C000B6"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$73" @69
+				Parent_View 	@68
+				location   	(-502, -506)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49C10103"
+				client     	@68
+				supplier   	@64
+				vertices   	(list Points
+				    (1337, 814)
+				    (951, 428))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$74" @70
+				Parent_View 	@68
+				location   	(-502, -506)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49C10105"
+				client     	@68
+				supplier   	@20
+				vertices   	(list Points
+				    (1337, 814)
+				    (1723, 1200))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$75" @71
+			location   	(1807, 577)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"614C49C4029F"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$76" @72
+				Parent_View 	@71
+				location   	(543, 227)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49C5033B"
+				client     	@71
+				supplier   	@45
+				vertices   	(list Points
+				    (1807, 577)
+				    (2562, 812))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$77" @73
+				Parent_View 	@71
+				location   	(543, 227)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"614C49C50341"
+				client     	@71
+				supplier   	@64
+				vertices   	(list Points
+				    (1807, 577)
+				    (1052, 343))
+				line_style 	0)))))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@1
+		quid       	"6171339C004B"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	144
+		items      	(list diagram_item_list
+		    (object InterObjView "$UNNAMED$78" @74
+			location   	(296, 353)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@74
+			    location   	(296, 378)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	159
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"617134F80086"
+			width      	170
+			height     	1187
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @75
+			    location   	(296, 433)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	157
+			    y_coord    	67
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @76
+			    location   	(296, 903)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @77
+			    location   	(296, 1013)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @78
+			    location   	(296, 1125)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @79
+			    location   	(296, 1335)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @80
+			    location   	(296, 1360)
+			    line_color 	3342489
+			    InterObjView 	@74
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE))
+		    (object InterObjView "$UNNAMED$79" @81
+			location   	(1309, 375)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@81
+			    location   	(1309, 400)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	247
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"617135AF022D"
+			width      	240
+			height     	1165
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @82
+			    location   	(1309, 455)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	105
+			    y_coord    	15
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @83
+			    location   	(1309, 500)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	237
+			    y_coord    	147
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @84
+			    location   	(1309, 672)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	171
+			    y_coord    	81
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @85
+			    location   	(1309, 783)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @86
+			    location   	(1309, 1125)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @87
+			    location   	(1309, 1230)
+			    line_color 	3342489
+			    InterObjView 	@81
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "$UNNAMED$80" @88
+			location   	(2927, 390)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@88
+			    location   	(2927, 415)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	284
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"617135BF036D"
+			width      	296
+			height     	1150
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @89
+			    location   	(2927, 470)
+			    line_color 	3342489
+			    InterObjView 	@88
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @90
+			    location   	(2927, 1013)
+			    line_color 	3342489
+			    InterObjView 	@88
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @91
+			    location   	(2927, 1230)
+			    line_color 	3342489
+			    InterObjView 	@88
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "$UNNAMED$81" @92
+			location   	(2118, 384)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@92
+			    location   	(2118, 409)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	166
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"617135E3023D"
+			width      	178
+			height     	1156
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @93
+			    location   	(2118, 464)
+			    line_color 	3342489
+			    InterObjView 	@92
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @94
+			    location   	(2118, 783)
+			    line_color 	3342489
+			    InterObjView 	@92
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @95
+			    location   	(2118, 903)
+			    line_color 	3342489
+			    InterObjView 	@92
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "Заходит на сайт" @96
+			location   	(0, 500)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @97
+			    Parent_View 	@96
+			    location   	(702, 454)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"6171361E0054"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	347
+			    justify    	0
+			    label      	"Заходит на сайт"
+			    pctDist    	0.399185
+			    height     	47
+			    orientation 	0)
+			line_color 	3342489
+			client     	@74
+			supplier   	@81
+			Focus_Src  	@75
+			Focus_Entry 	@83
+			origin     	(311, 500)
+			terminus   	(1293, 500)
+			ordinal    	0)
+		    (object SelfMessView "Поиск товара" @98
+			location   	(0, 647)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @99
+			    Parent_View 	@98
+			    location   	(1500, 614)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"617136B100C8"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	298
+			    justify    	0
+			    label      	"Поиск товара"
+			    pctDist    	1.173333
+			    height     	34
+			    orientation 	0)
+			line_color 	3342489
+			client     	@81
+			supplier   	@81
+			Focus_Src  	@83
+			Focus_Entry 	@84
+			origin     	(1325, 647)
+			terminus   	(1475, 647)
+			ordinal    	1)
+		    (object InterMessView "Оформление заказа клиента" @100
+			location   	(0, 783)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @101
+			    Parent_View 	@100
+			    location   	(1714, 739)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"6171373C002C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	559
+			    justify    	0
+			    label      	"Оформление заказа клиента"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@92
+			supplier   	@81
+			Focus_Src  	@94
+			Focus_Entry 	@85
+			origin     	(2102, 783)
+			terminus   	(1325, 783)
+			ordinal    	2)
+		    (object InterMessView "Помощь клиету при создания заказа" @102
+			location   	(0, 903)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @103
+			    Parent_View 	@102
+			    location   	(838, 862)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"617137480304"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	725
+			    justify    	0
+			    label      	"Помощь клиету при создания заказа"
+			    pctDist    	0.706704
+			    height     	42
+			    orientation 	1)
+			line_color 	3342489
+			client     	@92
+			supplier   	@74
+			Focus_Src  	@95
+			Focus_Entry 	@76
+			origin     	(2102, 903)
+			terminus   	(312, 903)
+			ordinal    	3)
+		    (object InterMessView "Пополнение электронного кошелька" @104
+			location   	(0, 1013)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @105
+			    Parent_View 	@104
+			    location   	(1611, 969)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"6171374F022C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	704
+			    justify    	0
+			    label      	"Пополнение электронного кошелька"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@74
+			supplier   	@88
+			Focus_Src  	@77
+			Focus_Entry 	@90
+			origin     	(311, 1013)
+			terminus   	(2911, 1013)
+			ordinal    	4)
+		    (object InterMessView "Списание суммы с кошелька" @106
+			location   	(0, 1230)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @107
+			    Parent_View 	@106
+			    location   	(2118, 1186)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"61713754017C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	588
+			    justify    	0
+			    label      	"Списание суммы с кошелька"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@88
+			supplier   	@81
+			Focus_Src  	@91
+			Focus_Entry 	@87
+			origin     	(2911, 1230)
+			terminus   	(1325, 1230)
+			ordinal    	6)
+		    (object InterMessView "Создание доставки изделия" @108
+			location   	(0, 1125)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @109
+			    Parent_View 	@108
+			    location   	(802, 1081)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"6171384F037B"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	553
+			    justify    	0
+			    label      	"Создание доставки изделия"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@74
+			supplier   	@81
+			Focus_Src  	@78
+			Focus_Entry 	@86
+			origin     	(311, 1125)
+			terminus   	(1293, 1125)
+			ordinal    	5)
+		    (object SelfMessView " Оформляет документ о получении товара" @110
+			location   	(0, 1335)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @111
+			    Parent_View 	@110
+			    location   	(739, 1302)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"617138A60106"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	822
+			    justify    	0
+			    label      	" Оформляет документ о получении товара"
+			    pctDist    	2.853333
+			    height     	34
+			    orientation 	0)
+			line_color 	3342489
+			client     	@74
+			supplier   	@74
+			Focus_Src  	@79
+			Focus_Entry 	@80
+			origin     	(312, 1335)
+			terminus   	(462, 1335)
+			ordinal    	7)))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"61430CD00180"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"61430CD00182"
+	logical_models 	(list unit_reference_list
+	    (object UseCase "NewUseCase"
+		quid       	"61430D330215"))
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"61430CD00186"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object UseCaseView "Logical View::NewUseCase" @112
+			location   	(1050, 613)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@112
+			    location   	(1050, 751)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"NewUseCase")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"61430D330215"
+			height     	118)))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"61430CD00182"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"61430CD0018B"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list)))
+	category   	"Logical View"
+	quidu      	"61430CD00180")
+    process_structure 	(object Processes
+	quid       	"61430CD00183"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"61430CD00185"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	attributes 	(list Attribute_Set
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialValue"
+			value      	"")))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Inherit"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RevEngRootDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RootPackage"
+			value      	"C++ Reverse Engineered")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RevEngDirectoriesAsPackages"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"HeaderFileExtension"
+			value      	".h")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ImplementationFileExtension"
+			value      	".cpp")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NewHeaderFileDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NewImplementationFileDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FileCapitalization"
+			value      	("FileCapitalizationSet" 0))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeGenExtraDirectories"
+			value      	("CodeGenExtraDirectoriesSet" 0))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"StripClassPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"TabWidth"
+			value      	8)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"IndentWidth"
+			value      	4)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"AccessIndentation"
+			value      	-2)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CreateBackupFiles"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ModelIdCommentRules"
+			value      	("ModelIdCommentRulesSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentRules"
+			value      	("CommentRulesSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"PageWidth"
+			value      	80)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ClassMemberOrder"
+			value      	("MemberOrderSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"OneParameterPerLine"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NamespaceBraceStyle"
+			value      	("BraceStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ClassBraceStyle"
+			value      	("BraceStyleSet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FunctionBraceStyle"
+			value      	("BraceStyleSet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Copyright"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialHeaderIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialBodyIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeGenExtraDirectoriesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"None"
+				value      	0)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Namespaces"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Packages"
+				value      	2)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FileCapitalizationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Same as model"
+				value      	0)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Lower case"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Upper case"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Lower case with underscores"
+				value      	3)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"BraceStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B1"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B2"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B3"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B4"
+				value      	4)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B5"
+				value      	5)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"MemberOrderSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Public First"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Private First"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Order by kind"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Unordered"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ModelIdCommentRulesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation only"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation and reverse engineering"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Never generate model IDs"
+				value      	3)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentRulesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Always synchronize"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation only"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Reverse engineering only"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Never synchronize"
+				value      	4)))))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RevEngRootDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RootPackage"
+			value      	"C++ Reverse Engineered")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"RevEngDirectoriesAsPackages"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"HeaderFileExtension"
+			value      	".h")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ImplementationFileExtension"
+			value      	".cpp")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NewHeaderFileDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NewImplementationFileDirectory"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FileCapitalization"
+			value      	("FileCapitalizationSet" 0))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeGenExtraDirectories"
+			value      	("CodeGenExtraDirectoriesSet" 0))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"StripClassPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"TabWidth"
+			value      	8)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"IndentWidth"
+			value      	4)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"AccessIndentation"
+			value      	-2)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CreateBackupFiles"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ModelIdCommentRules"
+			value      	("ModelIdCommentRulesSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentRules"
+			value      	("CommentRulesSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"PageWidth"
+			value      	80)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ClassMemberOrder"
+			value      	("MemberOrderSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"OneParameterPerLine"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"NamespaceBraceStyle"
+			value      	("BraceStyleSet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ClassBraceStyle"
+			value      	("BraceStyleSet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FunctionBraceStyle"
+			value      	("BraceStyleSet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleProperty"
+			value      	("CommentStyleSet" 1))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Copyright"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialHeaderIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialBodyIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeGenExtraDirectoriesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"None"
+				value      	0)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Namespaces"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Packages"
+				value      	2)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"FileCapitalizationSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Same as model"
+				value      	0)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Lower case"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Upper case"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Lower case with underscores"
+				value      	3)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C++ Comment"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"C Comment"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"XML Comment"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"JavaDoc Comment"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"BraceStyleSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B1"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B2"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B3"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B4"
+				value      	4)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"B5"
+				value      	5)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"MemberOrderSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Public First"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Private First"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Order by kind"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Unordered"
+				value      	4)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ModelIdCommentRulesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation only"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation and reverse engineering"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Never generate model IDs"
+				value      	3)))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CommentRulesSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Always synchronize"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Code generation only"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Reverse engineering only"
+				value      	3)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Never synchronize"
+				value      	4)))))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"InitialCodeBody"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Inline"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"GenerateFunctionBody"
+			value      	("GenerateFunctionBodySet" 2))
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"GenerateFunctionBodySet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"Default"
+				value      	2)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"True"
+				value      	1)
+			    (object Attribute
+				tool       	"Cplusplus"
+				name       	"False"
+				value      	0)))))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"Synchronize"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"ImplementationType"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"HeaderSourceFile"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"BodySourceFile"
+			value      	"")))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Category"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"CodeName"
+			value      	"")
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"IsNamespace"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"default__Uses"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Cplusplus"
+			name       	"BodyReferenceOnly"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Cplusplus"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"ANSIConvert"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"Editor"
+			value      	("EditorType" 100))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"IncludePath"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"StopOnError"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"EditorType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"BuiltIn"
+				value      	100)
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"WindowsShell"
+				value      	101)))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"PathSeparator"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateRoseID"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"NotShowRoseIDDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateComments"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"UseSpaces"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"SpacingItems"
+			value      	4)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"BraceOnNewLine"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"FundamentalTypes"
+			value      	"short; long; long long; unsigned short; unsigned long; unsigned long long; float; double; long double; char; boolean; wchar; octet; any;string; wstring; sequence; fixed; Object")))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ArrayDimensions"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ConstValue"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ImplementationType"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"IsLocal"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"InclusionProtectionSymbol"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"AdditionalIncludes"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CmIdentification"
+			value      	(value Text "  %X% %Q% %Z% %W%"))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"InclusionProtectionSymbol"
+			value      	"AUTO GENERATE")))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"Context"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"OperationIsOneWay"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ArrayDimensions"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CaseSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"Order"
+			value      	"")))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ArrayDimensions"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"CaseSpecifier"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateForwardReference"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"IsReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"Order"
+			value      	"")
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"BoundedRoleType"
+			value      	("AssocTypeSet" 47))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"AssocTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"Array"
+				value      	24)
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"Sequence"
+				value      	47)))))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Uses"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"GenerateForwardReference"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"Direction"
+			value      	("ParamDirectionTypeSet" 102))
+		    (object Attribute
+			tool       	"CORBA"
+			name       	"ParamDirectionTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"in"
+				value      	102)
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"inout"
+				value      	103)
+			    (object Attribute
+				tool       	"CORBA"
+				name       	"out"
+				value      	104)))))
+	    (object Attribute
+		tool       	"CORBA"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Deploy"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"framework"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Java"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"RootDir"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"StopOnError"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"UsePrefixes"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"AutoSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"NotShowRoseIDDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ShowCodegenDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateRoseID"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultJ2EEJavadoc"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultReturnLine"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultAuthor"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocDefaultSince"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"UserDefineJavaDocTags"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocNumAsterisks"
+			value      	0)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MaxNumChars"
+			value      	80)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Editor"
+			value      	("EditorType" 100))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VM"
+			value      	("VMType" 200))
+		    (object Attribute
+			tool       	"Java"
+			name       	"ClassPath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReferenceClasspath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EditorType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"BuiltIn"
+				value      	100)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VMType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Sun"
+				value      	200)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"VAJavaWorkingFolder"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"InstanceVariablePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ClassVariablePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultAttributeDataType"
+			value      	"int")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultOperationReturnType"
+			value      	"void")
+		    (object Attribute
+			tool       	"Java"
+			name       	"NoClassCustomDlg"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GlobalImports"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"OpenBraceClassStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"OpenBraceMethodStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"UseTabs"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"UseSpaces"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SpacingItems"
+			value      	3)
+		    (object Attribute
+			tool       	"Java"
+			name       	"RoseDefaultCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"AsteriskCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavaCommentStyle"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocAuthor"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocSince"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocVersion"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"JavadocExceptionTag"
+			value      	"@throws")
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"RemotePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"RemoteSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"HomePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"HomeSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalHomePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"LocalHomeSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"PrimaryKeyPrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"PrimaryKeySuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBDTDLocation"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletDTDLocation"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultEJBVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DefaultServletVersion"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SourceControl"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCSelected"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCProjectSourceRoot"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCProjectName"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"SCCComment"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"FundamentalType"
+			value      	"boolean; char; byte; short; int; long; float; double; Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; java.util.AbstractCollection; java.util.AbstractList;java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap;int; float; boolean; char; double; short; long; byte; ;Boolean; Byte; Character; Double; Float; Integer; Long; Object; Short; String; StringBuffer; Void; java.math.BigDecimal; java.math.BigInteger; java.sql.Date; java.sql.Time; java.sql.Timestamp; ;java.util.AbstractCollection; java.util.AbstractList; java.util.AbstractMap; java.util.AbstractSequentialList; java.util.AbstractSet; java.util.ArrayList; java.util.Arrays; java.util.BitSet; java.util.Calendar; java.util.Collections; java.util.Date; java.util.Dictionary; java.util.EventObject; java.util.GregorianCalendar; java.util.HashMap; java.util.HashSet; java.util.Hashtable; java.util.LinkedList; java.util.ListResourceBundle; java.util.Locale; java.util.Observable; java.util.Properties; java.util.PropertyPermission; java.util.PropertyResourceBundle; java.util.Random; java.util.ResourceBundle; java.util.ArrayList; java.util.SimpleTimeZone; java.util.Stack; java.util.StringTokenizer; java.util.Timer; java.util.TimerTask; java.util.TimerTask; java.util.TimeZone; java.util.TreeMap; java.util.TreeSet; java.util.Vector; java.util.WeakHashMap; ")))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Static"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateDefaultConstructor"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ConstructorIs"
+			value      	("Ctor_Set" 62))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Ctor_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"public"
+				value      	62)
+			    (object Attribute
+				tool       	"Java"
+				name       	"protected"
+				value      	63)
+			    (object Attribute
+				tool       	"Java"
+				name       	"private"
+				value      	64)
+			    (object Attribute
+				tool       	"Java"
+				name       	"package"
+				value      	65)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFinalizer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateStaticInitializer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateInstanceInitializer"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"DisableAutoSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReadOnly"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Strictfp"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"Default_Servlet__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletName"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContextRef"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"IsSingleThread"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletInitParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIsSecure"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcher"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestDispatcherPath"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherInclude"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"DispatcherForward"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletgetInfo"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletXMLFilePath"
+			value      	"")))
+	    (object Attribute
+		tool       	"Java"
+		name       	"Http_Servlet__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttribute"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestAttributesNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestAttributes"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameter"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletRequestParameterNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForRequestParameters"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeader"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletHeaderNames"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForHeaders"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletIntHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletDateHeader"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletCookie"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"MethodForCookie"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"ServletContentType"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateHTML"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"Default_EJB__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Generate_XML_DD"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCmpField"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBEnvironmentProperties"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBCnxFactory"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReferences"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSecurityRoles"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBNameInJAR"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType"
+			value      	("EJBSessionType_Set" 200))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	200)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateless"
+				value      	201)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Stateful"
+				value      	202)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType"
+			value      	("EJBTransactionType_Set" 211))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBTransactionType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	211)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	212)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType"
+			value      	("EJBPersistenceType_Set" 220))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBPersistenceType_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	""
+				value      	220)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bean"
+				value      	221)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Container"
+				value      	222)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBReentrant"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBSessionSync"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion"
+			value      	("EJBVersion_Set" 230))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBVersion_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"2.0"
+				value      	230)
+			    (object Attribute
+				tool       	"Java"
+				name       	"1.x"
+				value      	231)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"EJBXMLFilePath"
+			value      	"")))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"CmIdentification"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Module-Body"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"CmIdentification"
+			value      	(value Text ""))
+		    (object Attribute
+			tool       	"Java"
+			name       	"CopyrightNotice"
+			value      	(value Text ""))))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Abstract"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Static"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Native"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Synchronized"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedReturn"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"ReplaceExistingCode"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Strictfp"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"PropertyType"
+			value      	("BeanProperty_Set" 71))
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanProperty_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Not A Property"
+				value      	71)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Simple"
+				value      	72)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bound"
+				value      	73)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Constrained"
+				value      	74)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"IndividualChangeMgt"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write"
+			value      	("Read/Write_Set" 81))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read & Write"
+				value      	81)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read Only"
+				value      	82)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Write Only"
+				value      	83)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedTypes"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Java"
+			name       	"ContainerClass"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"InitialValue"
+			value      	"")
+		    (object Attribute
+			tool       	"Java"
+			name       	"Final"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Transient"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Volatile"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"PropertyType"
+			value      	("BeanProperty_Set" 71))
+		    (object Attribute
+			tool       	"Java"
+			name       	"BeanProperty_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Not A Property"
+				value      	71)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Simple"
+				value      	72)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Bound"
+				value      	73)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Constrained"
+				value      	74)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"IndividualChangeMgt"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write"
+			value      	("Read/Write_Set" 81))
+		    (object Attribute
+			tool       	"Java"
+			name       	"Read/Write_Set"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read & Write"
+				value      	81)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Read Only"
+				value      	82)
+			    (object Attribute
+				tool       	"Java"
+				name       	"Write Only"
+				value      	83)))
+		    (object Attribute
+			tool       	"Java"
+			name       	"GenerateFullyQualifiedTypes"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Java"
+			name       	"IsNavigable"
+			value      	TRUE)))
+	    (object Attribute
+		tool       	"Java"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"propertyId"
+		value      	"360000002")
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"DDLScriptFilename"
+			value      	"DDL1.SQL")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"DropClause"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"PrimaryKeyColumnName"
+			value      	"_ID")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"PrimaryKeyColumnType"
+			value      	"NUMBER(5,0)")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"SchemaNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"SchemaNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TableNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TypeNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TypeNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ViewNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ViewNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"VarrayNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"VarrayNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NestedTableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NestedTableNameSuffix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ObjectTableNamePrefix"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"ObjectTableNameSuffix"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsSchema"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OID"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"WhereClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CheckConstraint"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypeLength"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypePrecision"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionTypeScale"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CollectionOfREFS"
+			value      	FALSE)))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"MethodKind"
+			value      	("MethodKindSet" 1903))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OverloadID"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsReadNoDataState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsReadNoProcessState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsWriteNoDataState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsWriteNoProcessState"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsSelfish"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerType"
+			value      	("TriggerTypeSet" 1801))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerEvent"
+			value      	("TriggerEventSet" 1601))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerText"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerReferencingNames"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerForEach"
+			value      	("TriggerForEachSet" 1701))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerWhenClause"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"MethodKindSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"MapMethod"
+				value      	1901)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"OrderMethod"
+				value      	1902)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Function"
+				value      	1903)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Procedure"
+				value      	1904)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Operator"
+				value      	1905)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Constructor"
+				value      	1906)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Destructor"
+				value      	1907)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Trigger"
+				value      	1908)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"Calculated"
+				value      	1909)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerTypeSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"AFTER"
+				value      	1801)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"BEFORE"
+				value      	1802)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSTEAD OF"
+				value      	1803)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerForEachSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"ROW"
+				value      	1701)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"STATEMENT"
+				value      	1702)))
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"TriggerEventSet"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT"
+				value      	1601)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"UPDATE"
+				value      	1602)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"DELETE"
+				value      	1603)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR UPDATE"
+				value      	1604)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR DELETE"
+				value      	1605)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"UPDATE OR DELETE"
+				value      	1606)
+			    (object Attribute
+				tool       	"Oracle8"
+				name       	"INSERT OR UPDATE OR DELETE"
+				value      	1607)))))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Role"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"OrderNumber"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"NullsAllowed"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Length"
+			value      	"")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Precision"
+			value      	"2")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"Scale"
+			value      	"6")
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsIndex"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"IsPrimaryKey"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CompositeUnique"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"Oracle8"
+			name       	"CheckConstraint"
+			value      	"")))
+	    (object Attribute
+		tool       	"Oracle8"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Model Integrator"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Rose Web Publisher"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"TopLink"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"COM"
+		name       	"propertyId"
+		value      	"783606378")
+	    (object Attribute
+		tool       	"COM"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"COM"
+			name       	"TypeKinds"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"COM"
+				name       	"enum"
+				value      	100)
+			    (object Attribute
+				tool       	"COM"
+				name       	"record"
+				value      	101)
+			    (object Attribute
+				tool       	"COM"
+				name       	"module"
+				value      	102)
+			    (object Attribute
+				tool       	"COM"
+				name       	"interface"
+				value      	103)
+			    (object Attribute
+				tool       	"COM"
+				name       	"dispinterface"
+				value      	104)
+			    (object Attribute
+				tool       	"COM"
+				name       	"coclass"
+				value      	105)
+			    (object Attribute
+				tool       	"COM"
+				name       	"alias"
+				value      	106)
+			    (object Attribute
+				tool       	"COM"
+				name       	"union"
+				value      	107)
+			    (object Attribute
+				tool       	"COM"
+				name       	"max"
+				value      	108)
+			    (object Attribute
+				tool       	"COM"
+				name       	"(none)"
+				value      	109)))
+		    (object Attribute
+			tool       	"COM"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"COM"
+			name       	"kind"
+			value      	("TypeKinds" 109))
+		    (object Attribute
+			tool       	"COM"
+			name       	"uuid"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"version"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpstring"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpcontext"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"attributes"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"dllname"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"alias"
+			value      	"")))
+	    (object Attribute
+		tool       	"COM"
+		name       	"default__Operation"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"COM"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"COM"
+			name       	"id"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpstring"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"attributes"
+			value      	"")))
+	    (object Attribute
+		tool       	"COM"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"COM"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"COM"
+			name       	"id"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpstring"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"attributes"
+			value      	"")))
+	    (object Attribute
+		tool       	"COM"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"COM"
+			name       	"Generate"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"COM"
+			name       	"filename"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"library"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"uuid"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"version"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpstring"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpfile"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"helpcontext"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"lcid"
+			value      	"")
+		    (object Attribute
+			tool       	"COM"
+			name       	"attributes"
+			value      	"")))
+	    (object Attribute
+		tool       	"COM"
+		name       	"default__Param"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"COM"
+			name       	"attributes"
+			value      	"")))
+	    (object Attribute
+		tool       	"COM"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"Version Control"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"VisualStudio"
+		name       	"HiddenTool"
+		value      	FALSE)
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"propertyId"
+		value      	"809135966")
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Project"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"CreateMissingDirectories"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Editor"
+			value      	("EditorType" 100))
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"StopOnError"
+			value      	TRUE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"EditorType"
+			value      	(list Attribute_Set
+			    (object Attribute
+				tool       	"XML_DTD"
+				name       	"BuiltIn"
+				value      	100)
+			    (object Attribute
+				tool       	"XML_DTD"
+				name       	"WindowsShell"
+				value      	101)))))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Class"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Entity_SystemID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Entity_PublicID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"NotationValue"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"InternalValue"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ParameterEntity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ExternalEntity"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Notation_SystemID"
+			value      	"")
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Notation_PublicID"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Attribute"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"DefaultDeclType"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"default__Module-Spec"
+		value      	(list Attribute_Set
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"Assign All"
+			value      	FALSE)
+		    (object Attribute
+			tool       	"XML_DTD"
+			name       	"ComponentPath"
+			value      	"")))
+	    (object Attribute
+		tool       	"XML_DTD"
+		name       	"HiddenTool"
+		value      	FALSE))
+	quid       	"61430CD00184"))
